@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.capitaisapp.MainActivity">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="17dp"
+        android:onClick="getEstado"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/tViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_below="@+id/btnStart"
+        android:layout_marginTop="33dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tViewEstado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="Informe a capital do estado acima:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnStart"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="50dp"
+        android:onClick="verificaCapital"
+        android:text="Verificar" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/input"
+        android:layout_alignStart="@+id/input"
+        android:layout_below="@+id/btnVerificar"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="18sp" />
+
+</android.widget.RelativeLayout>
